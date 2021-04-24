@@ -4,7 +4,7 @@ Models in Python for General Bots AI demands.
 
 # Environment
 
-	1. Visual Studio Code (VSCode)
+  1. Visual Studio Code (VSCode)
   2. VSCode Extension: Azure Functions
 	3. VSCode Extension: Azure Machine Learning
   4. Node
