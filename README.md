@@ -13,6 +13,6 @@ Models in Python for General Bots AI demands.
 # Libraries
 
 - TensorFlow;
-- SciKit-Learning;
+- SciKit-Learn;
 - Pandas;
 - NumPy.
