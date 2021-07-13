@@ -8,3 +8,5 @@ numpy
 allennlp
 allennlp-models
 nltk
+Flask>=1.0,<=1.1.2
+hashlib

@@ -9,12 +9,22 @@ import json
 
 predictor = None
 
-def main(req: func.HttpRequest) -> func.HttpResponse:
+from flask import Flask, render_template, request
+import hmac
+
+app = Flask(__name__)
+
+@app.route("/query",  methods=['POST'])
+def index():    
     logging.info('General Bots QA.')
 
-    content = req.form.get('content')
-    question = req.params.get('question')
-                                     
+    content = request.form.get('content')
+    question = request.args.get('question')
+    key = request.args.get('key')
+
+    if not hmac.compare_digest(key, 'starter'):
+        return 'Invalid key.'
+
     global predictor
     if predictor is None:
         predictor = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/transformer-qa-2020-10-03.tar.gz")
@@ -26,9 +36,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
        
 
     if answer:
-        return func.HttpResponse(answer)
+        return answer
     else:
-        return func.HttpResponse(
-            "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
-            status_code=200
-    )
+        return "No answers for this question."
+    
+if __name__ == '__main__':
+    app.run(debug=True)
+        
