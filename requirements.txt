@@ -1,6 +1,9 @@
 azure-functions
 azure-storage-blob
 azure-identity
+Spacy
+Pytorch
+Numpy 
 allennlp
 allennlp-models
 Flask
