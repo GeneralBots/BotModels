@@ -5,6 +5,8 @@ import os
 from allennlp.predictors.predictor import Predictor
 import json
 
+logging.info('Starting General Bots Models server.')
+
 # https://ai.google.com/research/NaturalQuestions
 
 predictor = None
@@ -12,9 +14,12 @@ predictor = None
 from flask import Flask, render_template, request
 import hmac
 
+
+
 app = Flask(__name__)
 
-@app.route("/query",  methods=['POST'])
+
+@app.route("/reading-comprehension",  methods=['POST'])
 def index():    
     logging.info('General Bots QA.')
 
@@ -40,6 +45,6 @@ def index():
     else:
         return "No answers for this question."
     
-if __name__ == '__main__':
-    app.run(debug=True)
+app.run(debug=True)
+
         
