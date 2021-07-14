@@ -1,9 +1,11 @@
 azure-functions
 azure-storage-blob
 azure-identity
-Spacy
-Pytorch
-Numpy 
+tensorflow
+scikit-learn
+pandas
+numpy
 allennlp
 allennlp-models
-Flask
+nltk
+Flask>=1.0,<=1.1.2
