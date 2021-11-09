@@ -18,3 +18,8 @@ Models in Python for General Bots AI demands.
 - NumPy.
 
 ![General Bots Models Services](https://raw.githubusercontent.com/GeneralBots/BotModels/master/BotModels.png)
+
+
+# Education
+
+1. https://pjreddie.com/courses/computer-vision/
