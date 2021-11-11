@@ -23,7 +23,7 @@ Models in Python for General Bots AI demands.
 # Education
 
 1. https://pjreddie.com/courses/computer-vision/
-
+2. https://arxiv.org/abs/2106.00245 (Adversarial VQA: A New Benchmark for Evaluating the Robustness of VQA Models)
 
 # References
 
