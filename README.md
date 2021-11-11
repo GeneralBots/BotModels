@@ -23,3 +23,8 @@ Models in Python for General Bots AI demands.
 # Education
 
 1. https://pjreddie.com/courses/computer-vision/
+
+
+# References
+
+1. https://github.com/DenisDsh/VizWiz-VQA-PyTorch (VQA, Visual Question Answering)
