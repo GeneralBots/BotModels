@@ -28,3 +28,7 @@ Models in Python for General Bots AI demands.
 # References
 
 1. https://github.com/DenisDsh/VizWiz-VQA-PyTorch (VQA, Visual Question Answering)
+
+# Community
+
+1. https://github.com/aiformankind
