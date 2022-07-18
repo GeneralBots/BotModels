@@ -32,3 +32,7 @@ Models in Python for General Bots AI demands.
 # Community
 
 1. https://github.com/aiformankind
+
+# Resources
+
+1. https://manaai.cn/
